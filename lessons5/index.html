@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <div id="app">
-        <input type="checkbox" v-model="right" />&&
-        <input type="checkbox" v-model="left" />
-      </p>{{right && left}}</p>
+      <input type="range" min="0" max="5" step="1" v-model="rating">
+      <ul class="hr">
+        <li><img src="image/5-star.png"/></li>
+      </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="script.js"></script>
